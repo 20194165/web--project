@@ -1,6 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="registeration.aspx.cs" Inherits="transportaion_company.registeration" %>
 
 <!DOCTYPE html>
+<script runat="server">
+
+    protected void btn1_Click(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -19,8 +27,12 @@
         .auto-style4 {
             height: 23px;
         }
-        .auto-style5 {
-            margin-bottom: 197px;
+        .auto-style6 {
+            width: 205px;
+        }
+        .auto-style7 {
+            height: 23px;
+            width: 205px;
         }
     </style>
 </head>
@@ -30,44 +42,44 @@
             <table class="auto-style1">
                 <tr>
                     <td colspan="4">
-                        <asp:Label ID="Label1" runat="server" BorderStyle="Dashed" CssClass="auto-style5" ForeColor="#000066" Text="enter your data to sign up" Width="466px"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" CssClass="auto-style2" ForeColor="#000066" Text="enter your data to sign up" Width="466px" BackColor="#FFFFCC"></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Label ID="Fname" runat="server" Font-Bold="True" Text="first name"></asp:Label>
+                        <asp:Label ID="l1" runat="server" Font-Bold="True" Text="first name"></asp:Label>
                     </td>
-                    <td>
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <td class="auto-style6">
+                        <asp:TextBox ID="Fname" runat="server"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Label ID="lname" runat="server" Font-Bold="True" Text="last name"></asp:Label>
+                        <asp:Label ID="l2" runat="server" Font-Bold="True" Text="last name"></asp:Label>
                     </td>
-                    <td>
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <td class="auto-style6">
+                        <asp:TextBox ID="Lname" runat="server"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:Label ID="phone" runat="server" Font-Bold="True" Text="phone number"></asp:Label>
+                        <asp:Label ID="l3" runat="server" Font-Bold="True" Text="phone number"></asp:Label>
                     </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="phoneN" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style4"></td>
                     <td class="auto-style4"></td>
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:Label ID="phone1" runat="server" Font-Bold="True" Text="Email"></asp:Label>
+                        <asp:Label ID="l4" runat="server" Font-Bold="True" Text="Email"></asp:Label>
                     </td>
-                    <td class="auto-style4">
+                    <td class="auto-style7">
                         <asp:TextBox ID="TextBox7" runat="server" TextMode="Email"></asp:TextBox>
                     </td>
                     <td class="auto-style4">&nbsp;</td>
@@ -77,8 +89,8 @@
                     <td class="auto-style3">
                         <asp:Label ID="phone0" runat="server" Font-Bold="True" Text="sex"></asp:Label>
                     </td>
-                    <td class="auto-style4">
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" Width="116px">
+                    <td class="auto-style7">
+                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" Width="52px">
                             <asp:ListItem>M</asp:ListItem>
                             <asp:ListItem>F</asp:ListItem>
                         </asp:RadioButtonList>
@@ -88,39 +100,39 @@
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:Label ID="country" runat="server" Font-Bold="True" Text="country"></asp:Label>
+                        <asp:Label ID="l9" runat="server" Font-Bold="True" Text="country"></asp:Label>
                     </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="country" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style4"></td>
                     <td class="auto-style4"></td>
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:Label ID="pass1" runat="server" Font-Bold="True" Text="password"></asp:Label>
+                        <asp:Label ID="l5" runat="server" Font-Bold="True" Text="password"></asp:Label>
                     </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="TextBox5" runat="server" TextMode="Password"></asp:TextBox>
-                    </td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">
-                        <asp:Label ID="pass2" runat="server" Font-Bold="True" Text="retype password"></asp:Label>
-                    </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="TextBox6" runat="server" TextMode="Password"></asp:TextBox>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="pass1" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:Button ID="btn1" runat="server" Text="Submit" />
+                        <asp:Label ID="l6" runat="server" Font-Bold="True" Text="retype password"></asp:Label>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="pass2" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <asp:Button ID="btn1" runat="server" Text="Submit" OnClick="btn1_Click" style="margin-bottom: 17px" />
+                    </td>
+                    <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
                 </tr>
