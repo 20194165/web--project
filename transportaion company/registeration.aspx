@@ -34,10 +34,16 @@
             height: 23px;
             width: 205px;
         }
+        .test{
+           background-image: url("buss.gif");
+
+        }
     </style>
+    <FRAME NAME="F3"SRC="busp.html"></FRAME>
 </head>
-<body style="height: 129px">
+<body style="height: 129px" class="test">
     <form id="form1" runat="server">
+        
         <div>
             <table class="auto-style1">
                 <tr>
